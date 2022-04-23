@@ -44,7 +44,12 @@ Once the script is executable, you can run it two different ways:
 
 OR
 
-- Place the script in an executable location that your **env** `$PATH` recognizes. I placed mine in `/usr/local/bin` as this is the standard location in ***NIX*** environments.
+- Place the script in an executable location that your **env** `$PATH` recognizes. I placed mine in `/usr/local/bin` as this is the standard location in ***NIX*** environments. Then you can call the script directly without needing it's absolute path
+
+To execute it, simply run:
+`resolveAudio.sh`
+OR
+`./resolveAudio.sh` from it's current location
 
 ## Improvements:
 
