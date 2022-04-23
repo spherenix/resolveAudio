@@ -26,9 +26,9 @@ This script is very, very limited. This is my initial commit and I needed to sol
 
 Here is a list of limitations:
 - The script expects your files to all end in .MP4 filenames. Yes, that is case sensitive
-- If your files end in a different format, you must manually change that file extension from line 12, 14 and line 17 (*.MP4) to *.WHATEVER
-- Since `ffmpeg` is only doing a copy, your existing *.MP4 files and the new *.mov files will take up double the space. I wrote a simple command on line 17 to move those to a folder called `tmpTrash` that's created in the same location the files are renamed. If the copied files look good after testing, you can remove that `tmpTrash` directory altogether to consolidate.
-- If you DO NOT have enough space for duplicate files, you may want to add a new line in the `for loop` that removes the duplate *.MP4 file as it converts it.
+- If your files end in a different format, you must manually change that file extension from line 12, 14 and line 17 `(*.MP4)` to `*.WHATEVER`
+- Since `ffmpeg` is only doing a copy, your existing `*.MP4` files and the new `*.mov` files will take up double the space. I wrote a simple command on line 17 to move those to a folder called `tmpTrash` that's created in the same location the files are renamed. This is what `line 10` does. If the copied files look good after testing, you can remove that `tmpTrash` directory altogether to consolidate your disk space usage.
+- If you DO NOT have enough space for duplicate files, you may want to add a new line in the `for loop` that removes the duplicate `*.MP4` files as it converts it. I'll improve that later
 
 There are probably more limitations but I am pressed for time at the moment and just want to share this for now.
 
@@ -40,11 +40,11 @@ To use this script, you must first make it executable:
 
 Once the script is executable, you can run it two different ways:
 
-- Run the script from within the same location of all your *.MP4's. For example, if your files are in /home/user/videos, then copy the script there
+- Run the script from within the same location of all your `"*.MP4's`. For example, if your files are in `/home/user/videos`, then copy the script there and execute it from that location.
 
 OR
 
-- Place the script in an executable location that your env $PATH recognizes. I placed mine in `/usr/local/bin` as this is the standard location in *NIX* environments.
+- Place the script in an executable location that your **env** `$PATH` recognizes. I placed mine in `/usr/local/bin` as this is the standard location in ***NIX*** environments.
 
 ## Improvements:
 
