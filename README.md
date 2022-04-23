@@ -26,7 +26,7 @@ This script is very, very limited. This is my initial commit and I needed to sol
 
 Here is a list of limitations:
 - The script expects your files to all end in .MP4 filenames. Yes, that is case sensitive
-- If your files end in a different format, you must manually change that file extension from line 12, 14 and line 17 (*.MP4) to *.<whatever>
+- If your files end in a different format, you must manually change that file extension from line 12, 14 and line 17 (*.MP4) to *.WHATEVER
 - Since `ffmpeg` is only doing a copy, your existing *.MP4 files and the new *.mov files will take up double the space. I wrote a simple command on line 17 to move those to a folder called `tmpTrash` that's created in the same location the files are renamed. If the copied files look good after testing, you can remove that `tmpTrash` directory altogether to consolidate.
 - If you DO NOT have enough space for duplicate files, you may want to add a new line in the `for loop` that removes the duplate *.MP4 file as it converts it.
 
