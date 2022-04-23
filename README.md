@@ -40,7 +40,7 @@ To use this script, you must first make it executable:
 
 Once the script is executable, you can run it two different ways:
 
-- Run the script from within the same location of all your `"*.MP4's`. For example, if your files are in `/home/user/videos`, then copy the script there and execute it from that location.
+- Run the script from within the same location of all your `*.MP4's`. For example, if your files are in `/home/user/videos`, then copy the script there and execute it from that location.
 
 OR
 
