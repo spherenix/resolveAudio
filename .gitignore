@@ -1,1 +1,8 @@
 *.swp
+*.lock
+*.lck
+vault.yml
+.vault_passwd
+*.retry
+library
+Library
